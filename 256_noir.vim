@@ -9,7 +9,7 @@ hi Boolean         ctermbg=16     ctermfg=250
 hi Character       ctermbg=16     ctermfg=196
 hi Comment         ctermbg=16     ctermfg=240
 hi Condtional      ctermbg=16     ctermfg=196
-hi Constant        ctermbg=16     ctermfg=196
+hi Constant        ctermbg=16     ctermfg=252
 hi Cursor          ctermbg=255    ctermfg=250
 hi Debug           ctermbg=16     ctermfg=250
 hi Define          ctermbg=16     ctermfg=255
@@ -24,7 +24,7 @@ hi Function        ctermbg=16     ctermfg=255
 hi Identifier      ctermbg=16     ctermfg=250
 hi Include         ctermbg=16     ctermfg=255
 hi IncSearch       ctermbg=232    ctermfg=240
-hi Keyword         ctermbg=16     ctermfg=196
+hi Keyword         ctermbg=16     ctermfg=255
 hi Label           ctermbg=16     ctermfg=255
 hi LineNr          ctermbg=16     ctermfg=240
 hi Macro           ctermbg=16     ctermfg=250
@@ -39,7 +39,7 @@ hi Question        ctermbg=16     ctermfg=250
 hi Repeat          ctermbg=16     ctermfg=255
 hi Search          ctermbg=16     ctermfg=160
 hi SpecialChar     ctermbg=16     ctermfg=255
-hi SpecialComment  ctermbg=16     ctermfg=255
+hi SpecialComment  ctermbg=16     ctermfg=245
 hi Special         ctermbg=16     ctermfg=255
 hi SpecialKey      ctermbg=255    ctermfg=16
 hi Statement       ctermbg=16     ctermfg=255
