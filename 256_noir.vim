@@ -23,7 +23,6 @@ hi Folded          ctermbg=16     ctermfg=196
 hi Function        ctermbg=16     ctermfg=255
 hi Identifier      ctermbg=16     ctermfg=250
 hi Include         ctermbg=16     ctermfg=255
-hi IncSearch       ctermbg=232    ctermfg=240
 hi Keyword         ctermbg=16     ctermfg=255
 hi Label           ctermbg=16     ctermfg=255
 hi LineNr          ctermbg=16     ctermfg=240
@@ -58,7 +57,8 @@ hi WarningMsg      ctermbg=16     ctermfg=196
 hi WildMenu        ctermbg=255    ctermfg=240
 hi Visual          ctermbg=250    ctermfg=16
 hi VisualNOS       ctermbg=250    ctermfg=16
-hi Search          ctermbg=236    ctermfg=250
+hi IncSearch       ctermbg=245    ctermfg=255
+hi Search          ctermbg=236    ctermfg=245
 hi ErrorMsg        ctermbg=124    ctermfg=255
 hi SpellBad        ctermbg=88     ctermfg=250
 hi SpellCap        ctermbg=124    ctermfg=255
