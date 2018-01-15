@@ -3,8 +3,6 @@
 Uses the tab-separated file 'noir.tsv' to generate a vim color scheme
 that works with 256 and 16 color terminals, as well as in gvim."""
 
-import pandas
-
 PREAMBLE="""\
 " 256 noir. Basically: dark background, numerals & errors red,
 " rest different shades of gray.
@@ -48,22 +46,22 @@ TO16 = {
         232: 'Black',
         236: 'DarkGray',
         240: 'DarkGray',
-        245: 'DarkGray',
+        245: 'LightGray',
         250: 'LightGray',
         252: 'LightGray',
         255: 'White',
 }
 
 if __name__ == '__main__':
-    df = pandas.read_table('noir.tsv', index_col=0)
+    with open('noir.tsv', 'r') as inp:
+        table = [(key, int(fg), int(bg)) for key, fg, bg
+                in (line.strip().split() for line in inp.readlines()[1:])]
     print(PREAMBLE)
     print('if has("gui_running") || &t_Co == 256')
-    for key, row in df.iterrows():
+    for key, fg, bg in table:
         print('\thi %s\tctermfg=%d\tctermbg=%d\tguifg=#%s\tguibg=#%s' % (
-                key, row['ctermfg'], row['ctermbg'],
-                TORGB[row['ctermfg']], TORGB[row['ctermbg']]))
+                key, fg, bg, TORGB[fg], TORGB[bg]))
     print('else')  # terminal with less colors, e.g., 88, 16, or 8.
-    for key, row in df.iterrows():
-        print('\thi %s\tctermfg=%s\tctermbg=%s' % (
-                key, TO16[row['ctermfg']], TO16[row['ctermbg']]))
+    for key, fg, bg in table:
+        print('\thi %s\tctermfg=%s\tctermbg=%s' % (key, TO16[fg], TO16[bg]))
     print('endif')
