@@ -11,10 +11,10 @@ Features
 --------
 * Minimal colors, to avoid distracting:
 
-    - Shades of gray for most elements
-    - Bright keywords to highlight structure.
-    - Dark comments & strings to emphasize surrounding code.
-    - Red for exceptional elements (constants & errors)
+  - Shades of gray for most elements
+  - Bright keywords to highlight structure.
+  - Dark comments & strings to emphasize surrounding code.
+  - Red for exceptional elements (constants & errors)
 
 * Works in ``vim`` and ``gvim``. Rudimentary support for 16-color terminals.
 
