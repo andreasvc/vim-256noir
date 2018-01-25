@@ -13,7 +13,8 @@ Features
     - Shades of gray for most elements
     - Bright keywords to highlight structure.
     - Dark comments & strings to emphasize surrounding code.
-	- Red for exceptional elements (constants & errors)
+    - Red for exceptional elements (constants & errors)
+
 * Works in ``vim`` and ``gvim``. Rudimentary support for 16-color terminals.
 
 Usage
@@ -23,15 +24,15 @@ Usage
 - Put ``256_noir.vim`` in ~/.vim/colors/
 - Add the following to ``~/.vimrc``:
 
-```vim
-colorscheme 256_noir
+.. code-block:: vim
 
-" Change highlighting of cursor line when entering/leaving Insert Mode
-set cursorline
-highlight CursorLine cterm=NONE ctermfg=NONE ctermbg=233 guifg=NONE guibg=#121212
-autocmd InsertEnter * highlight CursorLine cterm=NONE ctermfg=NONE ctermbg=234 guifg=NONE guibg=#1c1c1c
-autocmd InsertLeave * highlight CursorLine cterm=NONE ctermfg=NONE ctermbg=233 guifg=NONE guibg=#121212
-```
+    colorscheme 256_noir
+
+    " Change highlighting of cursor line when entering/leaving Insert Mode
+    set cursorline
+    highlight CursorLine cterm=NONE ctermfg=NONE ctermbg=233 guifg=NONE guibg=#121212
+    autocmd InsertEnter * highlight CursorLine cterm=NONE ctermfg=NONE ctermbg=234 guifg=NONE guibg=#1c1c1c
+    autocmd InsertLeave * highlight CursorLine cterm=NONE ctermfg=NONE ctermbg=233 guifg=NONE guibg=#121212
 
 .. image:: screenshot.png
    :alt: screenshot of vim with noir colorscheme
@@ -41,24 +42,24 @@ The font in the above screenshots is the default xterm bitmap font
 
 Bonus
 -----
-`mc <https://midnight-commander.org/>`_, add the following to e.g. ``~/.bashrc``:
+- `mc <https://midnight-commander.org/>`_, add the following to e.g. ``~/.bashrc``:
 
-```bash
-export MC_SKIN=dark
-```
+  .. code-block:: bash
+  
+      export MC_SKIN=dark
 
-`mutt <http://www.mutt.org/>`_, add the following to ``~/.muttrc``:
+- `mutt <http://www.mutt.org/>`_, add the following to ``~/.muttrc``::
 
-    color normal      white default
-    color status      black white
-    color indicator   white red
-    color hdrdefault  yellow default
-    color signature   yellow default
-    color attachment  brightyellow default
-    color markers     brightred default
-    color quoted      green default
-    color tilde       blue default
-    color tree        red default
+      color normal      white default
+      color status      black white
+      color indicator   white red
+      color hdrdefault  yellow default
+      color signature   yellow default
+      color attachment  brightyellow default
+      color markers     brightred default
+      color quoted      green default
+      color tilde       blue default
+      color tree        red default
 
 Other recommended terminal apps with dark colors by default:
 
