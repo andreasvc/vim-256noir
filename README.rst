@@ -10,6 +10,7 @@ limitation is easy to overcome.
 Features
 --------
 * Minimal colors, to avoid distracting:
+
     - Shades of gray for most elements
     - Bright keywords to highlight structure.
     - Dark comments & strings to emphasize surrounding code.
