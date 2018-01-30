@@ -1,7 +1,6 @@
 	ctermfg	ctermbg
 Normal	250	16
 Character	196	16
-Conditional	196	16
 Number	196	16
 Float	196	16
 String	245	16
@@ -9,6 +8,7 @@ Boolean	250	16
 Constant	252	16
 Delimiter	250	16
 Identifier	250	16
+Conditional	255	16
 Keyword	255	16
 Statement	255	16
 Comment	240	16

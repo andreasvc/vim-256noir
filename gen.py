@@ -73,9 +73,11 @@ if __name__ == '__main__':
     print(PREAMBLE)
     print('if has("gui_running") || &t_Co == 256')
     for key, fg, bg in table:
-        print('\thi %s\tctermfg=%s\tctermbg=%s\tguifg=%s\tguibg=%s' % (
+        print('\thi %s\tctermfg=%s\tctermbg=%s\tcterm=NONE'
+                '\tguifg=%s\tguibg=%s\tgui=NONE' % (
                 key, fg, bg, TORGB[fg], TORGB[bg]))
     print('else')  # terminal with less colors, e.g., 88, 16, or 8.
     for key, fg, bg in table:
-        print('\thi %s\tctermfg=%s\tctermbg=%s' % (key, TO16[fg], TO16[bg]))
+        print('\thi %s\tctermfg=%s\tctermbg=%s\tcterm=NONE' % (
+                key, TO16[fg], TO16[bg]))
     print('endif')
