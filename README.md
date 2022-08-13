@@ -10,16 +10,16 @@ limitation is easy to overcome.
 ## Features
 
 - Minimal colors, to avoid distracting:
-  - Shades of gray for most elements
-  - Bright keywords to highlight structure.
-  - Dark comments & strings to emphasize surrounding code.
-  - Red for exceptional elements (constants & errors)
+	- Shades of gray for most elements
+	- Bright keywords to highlight structure.
+	- Dark comments & strings to emphasize surrounding code.
+	- Red for exceptional elements (constants & errors)
 - Works in `vim` and `gvim`. Rudimentary support for 16-color terminals.
 
 ## Usage
 
 - Enable [256 colors in vim ](http://vim.wikia.com/wiki/256_colors_in_vim).
-  Note that when using `ssh`, both client and server need to be properly configured.
+	Note that when using `ssh`, both client and server need to be properly configured.
 - Put `256_noir.vim` in ~/.vim/colors/
 - Add the following to `~/.vimrc`:
 
@@ -42,22 +42,22 @@ The font in the above screenshots is the default xterm bitmap font
 
 - [mc](https://midnight-commander.org/), add the following to e.g. `~/.bashrc`:
 
-  ```sh
-  export MC_SKIN=dark
-  ```
+	```sh
+	export MC_SKIN=dark
+	```
 
 - [mutt](http://www.mutt.org/), add the following to `~/.muttrc`:
 
-      color normal      white default
-      color status      black white
-      color indicator   white red
-      color hdrdefault  yellow default
-      color signature   yellow default
-      color attachment  brightyellow default
-      color markers     brightred default
-      color quoted      green default
-      color tilde       blue default
-      color tree        red default
+	color normal      white default
+	color status      black white
+	color indicator   white red
+	color hdrdefault  yellow default
+	color signature   yellow default
+	color attachment  brightyellow default
+	color markers     brightred default
+	color quoted      green default
+	color tilde       blue default
+	color tree        red default
 
 Other recommended terminal apps with dark colors by default:
 
