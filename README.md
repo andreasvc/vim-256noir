@@ -14,7 +14,7 @@ limitation is easy to overcome.
   - Bright keywords to highlight structure.
   - Dark comments & strings to emphasize surrounding code.
   - Red for exceptional elements (constants & errors)
-- Works in ``vim`` and ``gvim``. Rudimentary support for 16-color terminals.
+- Works in `vim` and `gvim`. Rudimentary support for 16-color terminals.
 
 ## Usage
 
