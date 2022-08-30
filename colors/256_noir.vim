@@ -27,7 +27,7 @@ if has("gui_running") || &t_Co == 256
 	hi SpecialKey ctermfg=237 gui=reverse guifg=#4e4e4e
 	hi NeoSpecialKey cterm=NONE ctermfg=240 ctermbg=16 gui=NONE guifg=#585858 guibg=#000000
 	hi Number cterm=NONE ctermfg=196 gui=NONE guifg=#ff0000
-	hi NeoNumber cterm=NONE ctermfg=196 ctermbg=16 gui=NONE guifg=#ff0000 guibg=#000000
+	hi NeoNumber cterm=NONE ctermfg=196 ctermbg=NONE gui=NONE guifg=#ff0000 guibg=#000000
 	hi FoldColor cterm=NONE ctermfg=124 gui=NONE guifg=#af0000
 	hi VertSplit ctermbg=NONE guibg=NONE
 	hi Foc ctermfg=255 ctermbg=235 guifg=#cccccc guibg=#121212 cterm=NONE gui=NONE
@@ -47,7 +47,7 @@ if has("gui_running") || &t_Co == 256
 	hi SignColumn cterm=NONE ctermfg=124 ctermbg=240 gui=NONE guifg=#af0000 guibg=#121212
 	hi SpellBad cterm=undercurl ctermfg=255 ctermbg=88 gui=undercurl guifg=#eeeeee guibg=#870000
 	hi SpellCap cterm=NONE ctermfg=255 ctermbg=124 gui=NONE guifg=#eeeeee guibg=#af0000
-	hi SpellRare cterm=NONE ctermfg=124 ctermbg=16 gui=NONE guifg=#af0000 guibg=#000000
+	hi SpellRare cterm=NONE ctermfg=124 ctermbg=NONE gui=NONE guifg=#af0000 guibg=#000000
 	hi WildMenu cterm=NONE ctermfg=240 ctermbg=255 gui=NONE guifg=#585858 guibg=#eeeeee
 	hi Pmenu cterm=NONE ctermfg=255 ctermbg=240 gui=NONE guifg=#eeeeee guibg=#585858
 	hi PmenuThumb cterm=NONE ctermfg=232 ctermbg=240 gui=NONE guifg=#080808 guibg=#585858
