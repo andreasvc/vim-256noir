@@ -35,6 +35,10 @@ autocmd InsertLeave * highlight CursorLine cterm=NONE ctermfg=NONE ctermbg=233 g
 
 ![screenshot of vim with noir colorscheme](screenshot.png)
 
+![c-shot](shot-c.png)
+
+![py-shot](shot-py.png)
+
 The font in the above screenshots is the default xterm bitmap font
 [fixed](https://en.wikipedia.org/wiki/Fixed_(typeface)) at 6x13.
 
