@@ -2,8 +2,8 @@
 
 A dark 256-color color scheme for vim.
 
-Have you ever wondered why most syntax highlighting of source code is about as
-subtle and pretty as a candy shop explosion? A technical reason is the
+Have you ever wondered why most syntax highlighting of source code is about
+as subtle and pretty as a candy shop explosion? A technical reason is the
 historical constraints imposed by 16 color terminals, but fortunately this
 limitation is easy to overcome.
 
