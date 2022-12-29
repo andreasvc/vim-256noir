@@ -21,6 +21,7 @@ endif
 let g:colors_name = "256_noir"
 
 if has("gui_running") || &t_Co == 256
+	hi BNormal cterm=NONE ctermfg=250 ctermbg=16 gui=NONE guifg=#bcbcbc guibg=NONE
 	hi NeoKeyword cterm=NONE ctermfg=255 gui=NONE guifg=#eeeeee
 """"
 	hi Keyword cterm=NONE ctermfg=255 gui=NONE guifg=#eeeeee
@@ -53,8 +54,8 @@ if has("gui_running") || &t_Co == 256
 	hi PmenuThumb cterm=NONE ctermfg=232 ctermbg=240 gui=NONE guifg=#080808 guibg=#585858
 	hi MatchParen cterm=NONE ctermfg=16 ctermbg=240 gui=NONE guifg=#000000 guibg=#585858
 	hi CursorLine cterm=NONE ctermfg=NONE ctermbg=233 gui=NONE guifg=NONE guibg=#121212
-	"hi StatusLine cterm=bold,reverse ctermfg=245 ctermbg=16 gui=bold,reverse guifg=#8a8a8a guibg=#000000
-	"hi StatusLineNC cterm=reverse ctermfg=236 ctermbg=16 gui=reverse guifg=#303030 guibg=#000000
+	hi StatusLine cterm=bold,reverse ctermfg=245 ctermbg=16 gui=bold,reverse guifg=#8a8a8a guibg=#000000
+	hi StatusLineNC cterm=reverse ctermfg=236 ctermbg=16 gui=reverse guifg=#303030 guibg=#000000
 	hi Visual cterm=reverse ctermfg=250 ctermbg=16 gui=reverse guifg=#bcbcbc guibg=#000000
 	hi TermCursor cterm=reverse ctermfg=NONE ctermbg=NONE gui=reverse guifg=NONE guibg=NONE
 else
@@ -89,7 +90,7 @@ endif
 highlight! link Boolean Normal
 highlight! link Delimiter Normal
 highlight! link Identifier Normal
-highlight! link Title Normal
+highlight! link Title BNormal
 highlight! link Debug Normal
 highlight! link Exception Normal
 highlight! link FoldColumn Normal
@@ -138,6 +139,7 @@ hi! link StatusLineNC Unfoc
 highlight! link Cursor StatusLine
 "
 highlight! link diffChanged DiffChange
+highlight! link SignColumn SpecialSignColumn
 highlight! link DiffDelete Comment
 highlight! link diffRemoved Comment
 highlight! link DiffAdd Keyword
